@@ -12,7 +12,7 @@ The tools I used for this project were:
 
 The project is ejecuted into a WLS2 and Windows 10 OS. The databases are into Windows 10 and Airflow and Scrapy, into WSL2. The instructions are made to use the WLS2-Windows method.
 
-To connect scripts, I created an environment variable, "IPPC", which store the ip of my Windows OS, where the MongoDB(to save the scraped data) and MySQL(to save the Airflow Credentials) databases are installed. I edited the .bashrc file with...
+To connect scripts, I created an environment variable, "IPPC", which store the ip of my Windows OS, where the MongoDB(to save the scraped data) and MySQL(to save the Airflow Credentials) databases are hosted. I edited the .bashrc file with...
 
 ```
 export IPPC=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
