@@ -18,7 +18,7 @@ To connect scripts, I created an environment variable, "IPPC", which store the i
 export IPPC=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
 ```
 
-To use this repo, you will install Python (Airflow)[https://airflow.apache.org/docs/apache-airflow/stable/start.html] (2.4.3 version), Celery and Redis into a virtual environment, create the environment variable.
+To use this repo, you will install Python [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/start.html) (2.4.3 version), Celery and Redis into a virtual environment, create the environment variable.
 
 ```
 sudo apt update
