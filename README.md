@@ -43,7 +43,7 @@ sudo pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT
 pip install celery==5.2.7
 pip install redis==4.4.0
 ```
-Next, clone this repo, and execute airflow
+Next, clone this repo in airflow folder, and execute.
 
 ```
 redis-server
