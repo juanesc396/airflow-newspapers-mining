@@ -19,6 +19,9 @@ def mongodb_check():
         print("Server not available")
 
 def clean_duplicates():
+    """
+    Function that remove the duplicated documents
+    """
     newspapers_db = CLIENT['Newspapers']
 
     for coll in newspapers_db.list_collection_names():
