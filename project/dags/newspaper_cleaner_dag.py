@@ -15,7 +15,7 @@ from mongodb_actions import clean_duplicates
     description = 'A scraper that extract sadasd from newspapers',
     schedule = timedelta(days=7),
     start_date = pendulum.datetime(2022, 12, 12, tz="UTC"),
-    tags=['scraper', 'nlp-project', 'test'],
+    tags=['scraper', 'nlp-project'],
     max_active_runs = 1
 )
 def cleaner():
