@@ -43,11 +43,11 @@ sudo pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT
 python -m pip install -r requirements.txt
 ```
 Next, clone this repo in airflow folder, and replace the airflow.cfg file, setting:
-- dags_folder                         -> /home/*User*/airflow/projects/dags
-- plugins_folder                      -> /home/*User*/airflow/plugins
-- base_log_folder                     -> /home/*User*/airflow/logs
-- dag_processor_manager_log_location  -> /home/*User*/airflow/logs/dag_processor_manager/dag_processor_manager.log
-- child_process_log_directory         -> /home/*User*/airflow/logs/scheduler
+- dags_folder -> /home/*User*/airflow/projects/dags
+- plugins_folder -> /home/*User*/airflow/plugins
+- base_log_folder -> /home/*User*/airflow/logs
+- dag_processor_manager_log_location -> /home/*User*/airflow/logs/dag_processor_manager/dag_processor_manager.log
+- child_process_log_directory -> /home/*User*/airflow/logs/scheduler
 
 Create an user credentials to get into Airflow Webserver
 ```
