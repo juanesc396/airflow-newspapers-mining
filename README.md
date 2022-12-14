@@ -18,7 +18,7 @@ To connect scripts, I created an environment variable, "IPPC", which store the i
 export IPPC=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}')
 ```
 
-To use this repo, you will install Python [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/start.html) (2.4.3 version), Celery and Redis into a virtual environment, create the environment variable.
+To use this repo, you will install Python, [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/start.html) (2.4.3 version), Celery, Redis, PyMongo and Scrapy into a virtual environment, create the environment variable.
 
 ```
 sudo apt update
@@ -40,10 +40,9 @@ CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${A
 # For example: https://raw.githubusercontent.com/apache/airflow/constraints-2.4.3/constraints-3.7.txt
 sudo pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 
-pip install celery==5.2.7
-pip install redis==4.4.0
+python -m pip install -r requirements.txt
 ```
-Next, clone this repo in airflow folder, and modify the airflow.cfg file, changing:
+Next, clone this repo in airflow folder, and replace the airflow.cfg file, setting:
 - dags_folder                         -> /home/*User*/airflow/projects/dags
 - plugins_folder                      -> /home/*User*/airflow/plugins
 - base_log_folder                     -> /home/*User*/airflow/logs
