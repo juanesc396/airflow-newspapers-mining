@@ -23,4 +23,4 @@ I also added RDSIP and RDSPW, which allows me to get credentials to manage MySQL
 
 The next diagram represent how the task are organized.
 
-[![na-airflow.png](https://i.postimg.cc/jdSktqKn/na-airflow.png)](https://postimg.cc/JtSQQLsR)
+![na-airflow](https://user-images.githubusercontent.com/85693288/234896124-e911a3b8-a9d9-42e6-9132-cea141c951ff.png)
