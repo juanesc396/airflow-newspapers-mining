@@ -1,4 +1,4 @@
-# airflow_scrapy_newspapers
+# Newspaper Analytics: Data Mining
 The purpose of ​​this project is to automate an ETL which scrape all days headlines of Spanish-speaking newspapers in a MongoDB, save them and make maintainment through Airflow. Next, through nlp_task get the raw data in MongoDB, classify it and save it in MySQL into AWS RDS.
 
 
